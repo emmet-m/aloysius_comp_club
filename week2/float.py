@@ -5,7 +5,7 @@ half = 0.5
 # 0.5 times 5 is 2.5
 half = half * 5
 
-# prints 2.6
+# prints 2.5
 print(half)
 
 # Make a new float variable
