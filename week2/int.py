@@ -25,5 +25,5 @@ i = 2
 wait = input("Press enter to continue...")
 
 while (True):
-	print("\n" + str(i) + " " + sys.getsizeof(i) + "\n")
+	print("\n" + str(i) + " " + str(sys.getsizeof(i)) + "\n")
 	i = i*2

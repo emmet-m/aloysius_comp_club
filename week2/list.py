@@ -19,3 +19,7 @@ if (myList[2]):
 
 print(type(myList))
 
+newList = [[1,2,3],[4,5,6],[7,8,9]]
+print(newList[0][2])
+
+print(newList[:2])
