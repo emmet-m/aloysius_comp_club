@@ -8,3 +8,5 @@ dictionary["Integer"] = 5
 
 for key in dictionary.keys():
 	print(str(dictionary[key]))
+
+print(type(dictionary))

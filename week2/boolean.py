@@ -11,3 +11,8 @@ if (f):
 
 if (not f):
 	print("Not false?")
+
+print(type(f))
+
+if type(f) is bool:
+	print("f is a boolean!")

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys
+
 i = 2
 
 # addition
@@ -20,6 +22,8 @@ print(i)
 
 i = 2
 
+wait = input("Press enter to continue...")
+
 while (True):
-	print(i)
-	i = i**2
+	print("\n" + str(i) + " " + sys.getsizeof(i) + "\n")
+	i = i*2

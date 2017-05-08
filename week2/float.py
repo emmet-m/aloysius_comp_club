@@ -13,3 +13,5 @@ for i in range(0,100):
 	root += 0.1
 
 print(root)
+
+print(type(root))
