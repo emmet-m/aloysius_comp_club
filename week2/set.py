@@ -22,3 +22,5 @@ print(z)
 print(z.issubset(x)) # True, everything in z is in x
 print(x.issubset(y)) # False, everything in x is NOT in y
 print(x.issuperset(z)) # True, x contains everyting in z, and more # True, x contains everyting in z, and more!!
+
+print(z.pop())
