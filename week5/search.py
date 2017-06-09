@@ -13,5 +13,7 @@ tree = parseTreeInput("tree1.txt")
 
 # These are all the children encoded in tree. Each of them has their own children, etc.
 print(tree.children)
+# This is the information stored in the node. In our case, its just a number
+print(tree.data)
 
 # Test your searching with some examples below!
