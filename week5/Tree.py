@@ -1,4 +1,4 @@
-class Tree(Object):
+class Tree(object):
 	def __init__(self, data):
 		self.data = data
 		self.children = []
