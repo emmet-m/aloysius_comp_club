@@ -21,7 +21,7 @@ def parseTreeInput(fileName):
 
 	# Done
 	addChildren('1', info)
-	
+
 	# return the root
 	return info["1"][0]
 
@@ -32,15 +32,16 @@ def addChildren(nodeId, info):
 	node = dat[0]
 	children = dat[1:]
 	for child in children:
+		if (child == ''):
+			break
 		node.children = node.children + [addChildren(child, info)]
 	return node
 
 def treeGen(size):
-	data = {}	
+	data = {}
 	i = 1
 	curr = 2
 	while i <= size:
-		
 		# Have we used up all existing nodes?
 		if (size - curr < 1):
 			# Initialise the untouched nodes
@@ -56,13 +57,13 @@ def treeGen(size):
 				n = random.randint(1, 3)
 			else:
 				n = random.randint(1, int((size*5)/100))
-		else:	
+		else:
 			n = random.randint(1, size - curr)
 
 		toAdd = range(curr, curr + n + 1)
 		curr = curr + n
 
-		# Add them	
+		# Add them
 		data[str(i)] = []
 		for j in toAdd:
 			data[str(i)] = data[str(i)] + [str(j)]
