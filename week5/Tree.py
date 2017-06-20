@@ -61,7 +61,7 @@ def treeGen(size):
 			n = random.randint(1, size - curr)
 
 		toAdd = range(curr, curr + n + 1)
-		curr = curr + n
+		curr = curr + n + 1
 
 		# Add them
 		data[str(i)] = []
