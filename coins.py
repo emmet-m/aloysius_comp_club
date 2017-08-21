@@ -4,9 +4,7 @@
 # To find the least amount of coins needed from given values to make a certain amount of money
 # Both iterative and recursive solutions below
 
-
-import timeit
-
+# Iterative solution
 def iterate(values, coins, M):
     # We want to iterate over all the cell values, including M
     for i in range(1,M+1):
@@ -24,8 +22,7 @@ def iterate(values, coins, M):
         # Set the current value to be the best value we found
         values[i] = best
 
-
-
+# Recursive solution
 def recurse(values, index, coins, M):
     # Create a best
     best = M 
@@ -43,7 +40,6 @@ def recurse(values, index, coins, M):
             best = values[index - coin] + 1
     # set the value of the previous best
     values[index] = best
-
 
 # Collect the values we want to compute with
 coins = input("Enter the coin values: ").split(" ")
